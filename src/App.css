@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+body {
+  background-color: rgba(91, 91, 91, 0.792);
+}
+
+.for-textarea {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.Rating {
+	font-size:14px;
+	
+  margin-left: -15%;
+}
+.rating-area {
+	overflow: hidden;
+	width: 265px;
+	margin: 0;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
+
+.itog {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: aliceblue;
+}
+
+.form-feedback {
+  margin-top: 5px;
+  width: 99%;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #333;
+}
+
+.text-feedback {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: aliceblue;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit {
+  width: 30%;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.submit:active {
+  background-color: rgba(255, 255, 255, 0.518);
+}
